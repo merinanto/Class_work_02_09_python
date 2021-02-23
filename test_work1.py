@@ -1,0 +1,16 @@
+voting_data = []
+voting_data.append({"county":"Arapahoe", "registered_voters": 422829})
+voting_data.append({"county":"Denver", "registered_voters": 463353})
+voting_data.append({"county":"Jefferson", "registered_voters": 432438})
+print(voting_data)
+print(len(voting_data))
+voting_data.insert(1,{'county': 'El Paso', 'registered_voters': 461149})
+print(voting_data)
+del voting_data[0]
+print(voting_data)
+templist = voting_data.pop(1)
+print(templist)
+voting_data.insert(2,templist)
+print(voting_data)
+voting_data.append({"county":"Arapahoe", "registered_voters": 422829})
+print(voting_data)
